@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion de Empledos</title>
+    <link rel="stylesheet" href="styles_empleados.css">
+</head>
+<body>
+    
+ <main class="contenedor_em">
+    <h1>Gestión de Empleados</h1>
+
+    <!-- FORMULARIO PARA AGREGAR EMPLEADOS -->
+    <section class="formulario_em">
+      <form id="empleadoForm">
+        <input type="text" id="nombre_empleado" placeholder="Nombre del empleado" required />
+        <input type="text" id="apellido_empleado" placeholder="Apellido del Empleado" required />
+        <input type="text" id="identificacion_empleado" placeholder="Identificacion del Empleado" required />
+        <input type="i" id="edad_empleado" placeholder="Edad del Empleado" required />
+
+        <button type="submit">Agregar Empleado</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN QUE MUESTRA TODOS LOS empleados -->
+    <section id="empleados" class="lista-empleados">
+      <!-- Cada empleado se renderiza desde JS -->
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

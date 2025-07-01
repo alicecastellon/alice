@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta>
+  <title>Gestión de Clientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Gestión de Clientes</h1>
+
+    <!-- FORMULARIO PARA AGREGAR CLIENTE -->
+    <section class="formulario">
+      <form id="clienteForm">
+        <input type="text" id="nombre_cliente" placeholder="Nombre del cliente" required />
+        <input type="email" id="correo_cliente" placeholder="Correo electrónico" required />
+        <button type="submit">Agregar Cliente</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN QUE MUESTRA TODOS LOS CLIENTES -->
+    <section id="clientes" class="lista-clientes">
+      <!-- Cada cliente se renderiza desde JS -->
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
